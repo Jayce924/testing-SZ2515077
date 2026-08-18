@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flight-risk-sz2515077"
+version = "1.0.0"
+description = "Deterministic flight delay risk estimator for a CI experiment"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "刘智超"}
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.3,<10"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

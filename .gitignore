@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.prof
+.pytest_cache/
+.coverage
+.venv/
+build/
+dist/
+*.egg-info/
+reports/
+results/
+!03_performance_profiling/results/.gitkeep
